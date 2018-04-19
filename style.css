@@ -1,0 +1,64 @@
+/*
+1. To include this style.css file into your html file
+  put this line:   <link rel="stylesheet" href="style.css">
+  between your <head></head>
+2. Then include this line:   <div id="main" class="container">
+  inside <body> </body>
+3. Lastly, include:   </div>
+  just right above </body>
+4. Refresh your page and now you'll have a basic web format!
+
+*/
+
+/* Affects whatever is in <html> tags */
+    html{
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Affects whatever is in <body> tags*/
+    body{
+      font-family: 'Arial'; /* Depends on what fonts your computer has! */
+      margin: 0;
+      padding: 0;
+      background: #f0f0f0;
+    }
+
+    /* the header tag listed below is not included as a usual html tag but ... */
+    /* You can create your own custom tag and design it! */
+    header {
+      width: 100%;
+      background-color: #ffffff;
+      margin: 0px 0px 10px 0px;
+      padding: 0;
+      top:0;
+      text-align: center;
+    }
+
+    /* Affects anything in h1 tags */
+    /* whatever is in here will override whatever is in body or html! */
+    h1 {
+      font-size: 50px;
+    }
+
+    /* Classes! */
+    /* Multiple html tags can have a class */
+    /* In CSS classes have a . before the name */
+    /* It will override any values set in tags without a class or id */
+    .container {
+      margin-left: 20%;
+      margin-right: 20%;
+
+    }
+
+    /* IDs */
+    /* Only ONE html tag can have this index */
+    /* In CSS ids have a # before the name */
+    /* If you assign multiple values with this id it will only alter the first one */
+    /* It will override any values set in tags without a id */
+    #main {
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .2);
+      background-color: #fff;
+      height: 100%;
+      padding: 10px;
+    }
